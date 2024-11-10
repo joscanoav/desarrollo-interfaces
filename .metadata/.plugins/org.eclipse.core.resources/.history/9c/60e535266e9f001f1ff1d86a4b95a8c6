@@ -1,0 +1,44 @@
+package diuf1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class LoginScreen {
+
+    private JFrame frame;
+
+    public LoginScreen() {
+        initialize();
+    }
+
+    /**
+     * Iniciamos la aplicacion
+     */
+    private void initialize() {
+        frame = new JFrame();
+        frame.setBounds(100, 100, 450, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+        frame.setLocationRelativeTo(null); 
+
+
+        // Botón "Registrarse"
+        JButton registerButton = new JButton("Registrarse");
+        registerButton.setBounds(175, 500, 100, 30); 
+        registerButton.addActionListener(e -> {
+        RegisterScreen1 registerScreen1 = new RegisterScreen1(); 
+        registerScreen1.setVisible(true); 
+            frame.dispose(); 
+        });
+        frame.getContentPane().add(registerButton);
+    }
+
+    /**
+     * Método para mostrar la ventana.
+     */
+    public void setVisible(boolean visible) {
+        frame.setVisible(visible);
+    }
+}

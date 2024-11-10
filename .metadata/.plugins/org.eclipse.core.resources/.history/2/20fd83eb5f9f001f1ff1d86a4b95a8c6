@@ -1,0 +1,40 @@
+package diuf1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+
+public class RegisterScreen1 {
+
+	private JFrame frame;
+
+
+	/**
+	 * Create the application.
+	 */
+	public RegisterScreen1() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+        frame.setBounds(100, 100, 450, 600); // Ajusta el tamaño de la ventana
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+
+        // Aquí puedes añadir botones, etiquetas u otros elementos a la pantalla de registro
+        JButton exampleButton = new JButton("Example");
+        exampleButton.setBounds(175, 500, 100, 30); // Ajusta la posición y el tamaño del botón
+        frame.getContentPane().add(exampleButton);
+    }
+
+    /**
+     * Método para mostrar la ventana de RegisterScreen1.
+     */
+    public void setVisible(boolean visible) {
+        frame.setVisible(visible);
+    }
+}
