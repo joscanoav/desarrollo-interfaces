@@ -81,7 +81,7 @@ public class WelcomeScreen {
         Label label = new Label("Welcome");
         label.setAlignment(Label.CENTER);
         label.setFont(new Font("Impact", Font.BOLD, 74));
-        label.setBounds(30, 10, 350, 109);
+        label.setBounds(40, 10, 350, 109);
         frame.getContentPane().add(label);
         
         Label label_1 = new Label("FastEat");
