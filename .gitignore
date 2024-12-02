@@ -1,0 +1,41 @@
+# Archivos y carpetas de Eclipse
+/.settings/
+/bin/
+/target/
+/.classpath
+/.project
+/.metadata/ 
+
+# Archivos y carpetas específicas de Java
+*.class
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+*.swp
+
+# Archivos de configuración específicos de herramientas
+# Eclipse/IDE specific
+/.vscode/
+/.idea/
+/*.iml
+
+# Maven (si estás usando Maven)
+target/
+*.log
+dependency-reduced-pom.xml
+release.properties
+
+# Gradle (si estás usando Gradle)
+.gradle/
+/build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Otros archivos sensibles o irrelevantes
+*.env
+*.properties
+
