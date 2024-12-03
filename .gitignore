@@ -5,6 +5,7 @@
 /.classpath
 /.project
 /.metadata/ 
+/.settings/
 
 # Archivos y carpetas específicas de Java
 *.class
